@@ -16,7 +16,7 @@ let main () =
                S.length name > 0 &&
                S.count_char line '\t' == 1)
       with exn ->
-        let () = Log.error "line %d incorrect: %s" i line in
+        let () = Log.error "%s:%d: %s" input_fn i line in
         raise exn
     )
 
