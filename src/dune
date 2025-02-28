@@ -1,6 +1,0 @@
-;; installed executables / public targets
-(executables
-  (names smi_enforce)
-  (public_names smi_enforce)
-  (modules smi_enforce)
-  (libraries batteries dolog minicli line_oriented))
