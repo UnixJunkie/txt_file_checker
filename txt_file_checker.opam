@@ -1,0 +1,21 @@
+opam-version: "2.0"
+authors: "Francois Berenger"
+maintainer: "unixjunkie@sdf.org"
+homepage: "https://github.com/UnixJunkie/txt_file_checker"
+bug-reports: "https://github.com/UnixJunkie/txt_file_checker/issues"
+dev-repo: "git+https://github.com/UnixJunkie/txt_file_checker.git"
+license: "BSD-3-Clause"
+build: ["dune" "build" "-p" name "-j" jobs]
+depends: [
+  "batteries" {>= "3.5.0"}
+  "dolog" {>= "5.0.0"}
+  "dune" {>= "1.11"}
+  "line_oriented" {>= "1.2.0"}
+  "minicli" {>= "5.0.0"}
+  "ocaml" {>= "5.1.0"}
+]
+synopsis: "Enforce txt files line format"
+# url {
+#   src: "https://github.com/UnixJunkie/molenc/archive/XXX"
+#   checksum: "md5=YYY"
+# }
